@@ -1,0 +1,62 @@
+main div {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 30%;
+}
+main, main div {
+    display: -ms-flexbox;
+    display: flex;
+}
+main header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+        font-size: 14px;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ul {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+ul li:nth-child(2n+1) {
+    background: #f9f9f9;
+}
+ul li {
+    list-style: none;
+    margin: 7px 0;
+    padding: 10px;
+}
+main header .clearBasket {
+    color: red;
+    opacity: .3;
+}
+
+ul.Basket li:before, ul.Basket li:hover:before {
+    font-family: FontAwesome;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+ul.Basket li:before {
+    content: "\F147 \A0";
+    color: #fff;
+}
+
+
+ul.Basket li:hover:before {
+    content: "\F147   \A0";
+    color: red;
+}
+
+main header .clearBasket:hover {
+    opacity: 1;
+}
